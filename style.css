@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.topText{
+    padding-left:16px;
+}
+
+.topBtn{
+    margin-right: 16px;
+    background-color: #92ddb4;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.topBtn:active{
+    background-color: #92ddb4;
+}
+
+.bookView{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card{
+    padding: 16px;
+    margin: 16px;
+    border-radius: 5px;
+    background-color: #edd1b6;
+    text-align: center;
+    
+}
+
+.cardBtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.rmcard, .setRead{
+    background-color: rgb(255, 255, 255);
+    border: 2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.setRead:active{
+    background-color: rgb(224, 247, 225);
+}
+
+.rmcard:active {
+    background-color: rgb(245, 160, 160);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Pop up container from chatgpt */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Content inside the pop-up container */
+  .popup-content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Close button on the pop-up */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+
+  .bookForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+  }
+
+
+/* End of pop up */  
+
